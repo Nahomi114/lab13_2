@@ -11,6 +11,16 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('autores.index') }}">Autores</a>
+                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('editoriales.index') }}">Editoriales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('usuarios.index') }}">Usuarios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('libros.index') }}">Libros</a>
                 </li>
             </ul>
         </div>

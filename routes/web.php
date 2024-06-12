@@ -3,7 +3,9 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AutorController;
-
+use App\Http\Controllers\EditorialController;
+use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\LibroController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -18,4 +20,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 Route::resource('autores', AutorController::class);
+Route::resource('editoriales', EditorialController::class);
+Route::resource('usuarios', UsuarioController::class);
+Route::resource('libros', LibroController::class);
 require __DIR__.'/auth.php';
