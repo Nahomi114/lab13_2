@@ -9,4 +9,5 @@ class Editorial extends Model
 {
     protected $table = 'editoriales';
     use HasFactory;
+    protected $fillable = ['nombre'];
 }
